@@ -6,7 +6,7 @@ import questions from '../data/questions.json';
 const Onboarding = ({ isActive }) => {
   const total = questions.length;
 
-  // ✅ Load saved state from localStorage on init
+
   const [index, setIndex] = useState(() => {
     const saved = localStorage.getItem("onboardingIndex");
     return saved ? JSON.parse(saved) : 0;
@@ -20,7 +20,7 @@ const Onboarding = ({ isActive }) => {
   const [input, setInput] = useState('');
   const [error, setError] = useState('');
 
-  // ✅ Whenever answers or index changes, save them
+
   useEffect(() => {
     localStorage.setItem("onboardingAnswers", JSON.stringify(answers));
   }, [answers]);
