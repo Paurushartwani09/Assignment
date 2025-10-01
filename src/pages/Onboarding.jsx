@@ -1,14 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ChatBubble from '../components/ChatBubble';
 import InputBar from '../components/InputBar';
 import questions from '../data/questions.json';
 
 const Onboarding = ({ isActive }) => {
   const total = questions.length;
-  const [index, setIndex] = useState(0);
-  const [answers, setAnswers] = useState({});
+
+  // ✅ Load saved state from localStorage on init
+  const [index, setIndex] = useState(() => {
+    const saved = localStorage.getItem("onboardingIndex");
+    return saved ? JSON.parse(saved) : 0;
+  });
+
+  const [answers, setAnswers] = useState(() => {
+    const saved = localStorage.getItem("onboardingAnswers");
+    return saved ? JSON.parse(saved) : {};
+  });
+
   const [input, setInput] = useState('');
   const [error, setError] = useState('');
+
+  // ✅ Whenever answers or index changes, save them
+  useEffect(() => {
+    localStorage.setItem("onboardingAnswers", JSON.stringify(answers));
+  }, [answers]);
+
+  useEffect(() => {
+    localStorage.setItem("onboardingIndex", JSON.stringify(index));
+  }, [index]);
 
   const renderFollowUp = (template, answerObj) => {
     if (!template) return '';
@@ -38,13 +57,11 @@ const Onboarding = ({ isActive }) => {
     const currQ = questions[index];
     const trimmed = input.trim();
 
-    
     if (currQ && currQ.validation && trimmed.length === 0) {
       setError(currQ.validation);
       return;
     }
 
-   
     setAnswers(prev => ({ ...prev, [currQ.field]: trimmed || null }));
     setInput('');
     setIndex(i => i + 1);
@@ -59,9 +76,8 @@ const Onboarding = ({ isActive }) => {
   };
 
   if (index >= total) {
- 
     return (
-    <div className={`onboarding-card onboarding ${isActive ? "active" : ""}`}>
+      <div className={`onboarding-card onboarding ${isActive ? "active" : ""}`}>
         <h2 className="mb-2">Thanks — you're all set!</h2>
         <p className="">Here’s a summary of your responses and follow-ups:</p>
 
@@ -90,7 +106,7 @@ const Onboarding = ({ isActive }) => {
     <div className="onboarding-card">
       <h2 className="title mb-3">Welcome! Let's get you set with Themis</h2>
       <p className="subtitle">
-        I'm your AI Agent. I'm here to learn about your needs so we can configure the AI      Management System for you.
+        I'm your AI Agent. I'm here to learn about your needs so we can configure the AI Management System for you.
       </p>
 
       <div className="question-count text-center my-2">Question {Math.min(index + 1, total)} of {total}</div>
