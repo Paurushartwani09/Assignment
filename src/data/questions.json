@@ -1,0 +1,182 @@
+[
+  {
+    "field": "company_name",
+    "question": "What is the legal name of your organization?",
+    "follow_up": "Thank you! I'll be helping {company_name} establish its AI Management System.",
+    "validation": "Please provide your organization's legal name."
+  },
+  {
+    "field": "industry_sector",
+    "question": "Which industry sector(s) does your organization operate in? (e.g., Financial Services, Healthcare, Manufacturing, Technology, Government, etc.)",
+    "follow_up": "Excellent! The {industry_sector} sector has specific AI regulatory considerations we'll address.",
+    "validation": "Please specify your primary industry sector."
+  },
+  {
+    "field": "organization_size",
+    "question": "What is your organization's size? (Number of employees and annual revenue if comfortable sharing)",
+    "follow_up": "Perfect! This helps us scale the AIMS appropriately for your organization.",
+    "validation": "Please provide your organization size (at least employee count)."
+  },
+  {
+    "field": "geographic_operations",
+    "question": "In which countries/regions does your organization operate? (List all locations where you have operations or serve customers)",
+    "follow_up": "Noted! We'll ensure compliance with regulations in {geographic_operations}.",
+    "validation": "Please list your operational geographies."
+  },
+  {
+    "field": "ai_current_usage",
+    "question": "Does your organization currently use AI/ML systems? If yes, briefly describe the main use cases.",
+    "follow_up": "Thank you! This gives us a clear picture of your current AI landscape.",
+    "validation": "Please indicate if you use AI and describe any current use cases."
+  },
+  {
+    "field": "ai_development_stage",
+    "question": "What is your AI development stage? (e.g., Exploring AI, Piloting, Production deployment, Scaling AI across organization)",
+    "follow_up": "Great! We'll tailor the AIMS to your {ai_development_stage} maturity level.",
+    "validation": "Please describe your AI development stage."
+  },
+  {
+    "field": "ai_systems_inventory",
+    "question": "How many AI systems/models are currently in: a) Production, b) Development/Testing, c) Planning phase?",
+    "follow_up": "Excellent! This helps us understand the scope of AI systems to manage.",
+    "validation": "Please provide approximate numbers for each category."
+  },
+  {
+    "field": "ai_application_areas",
+    "question": "In which areas do you use or plan to use AI? (e.g., Customer service, Risk assessment, Product development, Operations, HR, Marketing)",
+    "follow_up": "Perfect! We'll ensure coverage for all these AI application areas.",
+    "validation": "Please list your AI application areas."
+  },
+  {
+    "field": "key_stakeholders",
+    "question": "Who are your key stakeholders regarding AI usage? (e.g., Customers, Regulators, Board, Employees, Partners, Investors)",
+    "follow_up": "Understood! We'll address {key_stakeholders} requirements in the AIMS.",
+    "validation": "Please identify your key AI stakeholders."
+  },
+  {
+    "field": "regulatory_requirements",
+    "question": "Which AI-related regulations apply to your organization? (e.g., EU AI Act, GDPR, CCPA, sector-specific regulations)",
+    "follow_up": "Important! We'll ensure AIMS compliance with {regulatory_requirements}.",
+    "validation": "Please list applicable AI regulations."
+  },
+  {
+    "field": "existing_certifications",
+    "question": "Do you hold any ISO certifications or management system standards? (e.g., ISO 27001, ISO 9001, ISO 27701, SOC2)",
+    "follow_up": "Excellent! We can integrate with your existing {existing_certifications} systems.",
+    "validation": "Please list any current certifications or 'None' if not applicable."
+  },
+  {
+    "field": "customer_ai_requirements",
+    "question": "Do your customers or contracts have specific AI requirements? (e.g., transparency, fairness, explainability, data privacy)",
+    "follow_up": "Noted! Customer requirements will be incorporated into the AIMS design.",
+    "validation": "Please describe any customer AI requirements."
+  },
+  {
+    "field": "aims_scope_coverage",
+    "question": "What should the AIMS cover? (e.g., Entire organization, Specific business units, Specific AI products/services)",
+    "follow_up": "Perfect! We'll define the AIMS boundary for {aims_scope_coverage}.",
+    "validation": "Please specify the intended scope coverage."
+  },
+  {
+    "field": "certification_intent",
+    "question": "Are you seeking ISO 42001 certification or implementing for internal governance only?",
+    "follow_up": "Understood! We'll prepare accordingly for your {certification_intent} objective.",
+    "validation": "Please indicate: Certification or Internal governance."
+  },
+  {
+    "field": "priority_ai_systems",
+    "question": "Which AI systems are highest priority for AIMS coverage? (List top 3-5 systems)",
+    "follow_up": "Great! We'll prioritize these systems in our implementation approach.",
+    "validation": "Please list your priority AI systems."
+  },
+  {
+    "field": "executive_sponsor",
+    "question": "Who will be the executive sponsor for the AIMS? (Name and role)",
+    "follow_up": "Excellent! Having {executive_sponsor} as sponsor ensures strong leadership commitment.",
+    "validation": "Please identify the executive sponsor."
+  },
+  {
+    "field": "ai_governance_structure",
+    "question": "Do you have an existing AI governance structure? (e.g., AI Ethics Committee, AI Risk Committee, Data Governance Board)",
+    "follow_up": "Thank you! We'll work with your existing governance structure.",
+    "validation": "Please describe current AI governance or indicate 'None'."
+  },
+  {
+    "field": "ai_policy_status",
+    "question": "Do you have an AI Policy or AI Ethics principles? If yes, when were they last updated?",
+    "follow_up": "Noted! We'll review and align with your existing AI policy framework.",
+    "validation": "Please describe your AI policy status."
+  },
+  {
+    "field": "risk_assessment_process",
+    "question": "How do you currently assess AI-related risks? (e.g., Formal process, Ad-hoc, Not yet established)",
+    "follow_up": "Good to know! We'll build on your {risk_assessment_process} approach.",
+    "validation": "Please describe your AI risk assessment approach."
+  },
+  {
+    "field": "ai_incidents_history",
+    "question": "Have you experienced any AI-related incidents or issues? (e.g., Bias complaints, Model failures, Data breaches)",
+    "follow_up": "Thank you for sharing. This helps us focus on critical risk areas.",
+    "validation": "Please indicate Yes/No and brief description if applicable."
+  },
+  {
+    "field": "impact_assessment_types",
+    "question": "Which impact assessments do you perform for AI? (e.g., Privacy (DPIA), Ethical, Algorithmic, None yet)",
+    "follow_up": "Understood! We'll ensure proper impact assessment coverage.",
+    "validation": "Please list current impact assessments or 'None'."
+  },
+  {
+    "field": "ai_team_size",
+    "question": "How many people work directly with AI in your organization? (Include data scientists, ML engineers, AI governance roles)",
+    "follow_up": "Perfect! This helps us understand your AI capability and resource needs.",
+    "validation": "Please provide approximate team size."
+  },
+  {
+    "field": "aims_budget",
+    "question": "Do you have a defined budget for AIMS implementation? (Range is fine, helps us recommend appropriate solutions)",
+    "follow_up": "Thank you! We'll provide recommendations within your budget parameters.",
+    "validation": "Please indicate budget range or 'To be determined'."
+  },
+  {
+    "field": "implementation_timeline",
+    "question": "What is your target timeline for AIMS implementation? (e.g., 3 months, 6 months, 12 months)",
+    "follow_up": "Great! We'll create a roadmap for your {implementation_timeline} timeline.",
+    "validation": "Please provide your target timeline."
+  },
+  {
+    "field": "data_sources",
+    "question": "What are your primary data sources for AI? (e.g., Internal databases, Third-party data, Public datasets, Real-time streams)",
+    "follow_up": "Excellent! Data governance will cover these {data_sources}.",
+    "validation": "Please list your main AI data sources."
+  },
+  {
+    "field": "ai_development_tools",
+    "question": "What AI/ML platforms and tools do you use? (e.g., Cloud AI services, Open-source frameworks, Commercial platforms)",
+    "follow_up": "Perfect! We'll ensure AIMS compatibility with your AI tech stack.",
+    "validation": "Please list your main AI development tools."
+  },
+  {
+    "field": "third_party_ai",
+    "question": "Do you use third-party AI services or models? (e.g., OpenAI, Google AI, AWS AI, vendor solutions)",
+    "follow_up": "Important! We'll include third-party AI governance in the AIMS.",
+    "validation": "Please list any third-party AI services used."
+  },
+  {
+    "field": "aims_objectives",
+    "question": "What are your top 3 objectives for implementing ISO 42001? (e.g., Compliance, Customer trust, Risk reduction, Competitive advantage)",
+    "follow_up": "Excellent! We'll ensure the AIMS delivers on these key objectives.",
+    "validation": "Please list your top 3 AIMS objectives."
+  },
+  {
+    "field": "success_metrics",
+    "question": "How will you measure AIMS success? (What KPIs or outcomes are most important?)",
+    "follow_up": "Perfect! We'll build these metrics into the AIMS performance evaluation.",
+    "validation": "Please describe your success criteria."
+  },
+  {
+    "field": "immediate_concerns",
+    "question": "What are your most immediate AI governance concerns or pain points?",
+    "follow_up": "Thank you! We'll prioritize addressing these concerns early in implementation.",
+    "validation": "Please share your immediate AI governance concerns."
+  }
+]
