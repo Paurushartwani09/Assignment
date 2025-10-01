@@ -23,12 +23,7 @@ const Header = ({ onClick }) => {
             <span style={{ color: "#FFFFFF" }}>CYB</span>
             <span style={{ color: "#00AEEF" }}>PASS</span>
           </span>
-          {/* <img
-            src="../../public/vite.svg"
-            alt="Logo"
-            className="logo-icon me-2"
-            style={{ height: '30px' }}
-          /> */}
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -76,7 +71,7 @@ const Header = ({ onClick }) => {
       </div>
 
       <div className="d-flex align-items-center gap-4">
-        <div className="text-end  small">
+        <div className="text-end  small date-time">
           <div>
             {now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
           </div>

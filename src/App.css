@@ -371,5 +371,10 @@ opacity: 1;
 .hamburger-icon{
   display: block!important;
 }
-
+.date-time {
+  display: none;
+}
+.custom-header{
+  width:100%;
+}
 }
