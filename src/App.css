@@ -409,13 +409,7 @@ font-size: 16px;
   gap: 8px;
   transition: opacity 0.2s ease;
 }
-/* .skip{
-      background: rgb(47 82 118);
-    padding: 13px;
-    border-radius: 50px;
-    font-size: 16px;
-    border-color: rgb(47 82 118)!important;
-} */
+
 
 .skip:hover {
   opacity: 0.8!important;
@@ -672,4 +666,15 @@ font-size: 16px;
   padding: 10px 15px;
   font-size: 16px;
   transition: all 0.3s;
+}
+
+.quesion-text{
+  color: #cccccc;
+}
+.answer-text{
+  color:#afb3b7;
+}
+.heading-result{
+  color: #4facfe!important;
+
 }

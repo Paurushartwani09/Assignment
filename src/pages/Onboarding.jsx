@@ -78,8 +78,8 @@ const Onboarding = ({ isActive }) => {
   if (index >= total) {
     return (
       <div className={`onboarding-card onboarding ${isActive ? "active" : ""}`}>
-        <h2 className="mb-2">Thanks — you're all set!</h2>
-        <p className="">Here’s a summary of your responses and follow-ups:</p>
+        <h2 className="mb-2 heading-result">Thanks — you're all set!</h2>
+        <p className="heading-result">Here’s a summary of your responses and follow-ups:</p>
 
         <div className="answers-list mt-3">
           {questions.map((q, i) => {
@@ -87,9 +87,9 @@ const Onboarding = ({ isActive }) => {
             const follow = renderFollowUp(q.follow_up || '', answers);
             return (
               <div key={q.field} className="mb-3 p-3" style={{ background: 'rgba(255,255,255,0.02)', borderRadius: 10 }}>
-                <div><strong>Q{ i + 1 } — {q.field}</strong></div>
-                <div className="mt-1">{q.question}</div>
-                <div className="mt-2">Answer: <em>{ans ?? '— skipped —'}</em></div>
+                <div className='quesion-text'><strong>Q{ i + 1 } — {q.field}</strong></div>
+                <div className="mt-1 quesion-text">{q.question}</div>
+                <div className="mt-2 answer-text">Answer: <em>{ans ?? '— skipped —'}</em></div>
                 {q.follow_up && <div className="mt-2 text-info">Follow up: {follow}</div>}
               </div>
             );
